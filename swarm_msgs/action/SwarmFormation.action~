@@ -1,0 +1,9 @@
+#goal definition
+geometry_msgs/PoseStamped pose
+std_msgs/float64 precision
+---
+#result definition
+bool success
+---
+#feedback
+geometry_msgs/PoseStamped error

@@ -1,0 +1,14 @@
+swarm:
+  uav1:
+    laser_topic: "scan"
+    laser_frame: "laser0_frame"
+  uav2:
+    laser_topic: "scan"
+    laser_frame: "laser0_frame"
+  uav3:
+    laser_topic: "scan"
+    laser_frame: "laser0_frame"
+  uav4:
+    laser_topic: "scan"
+    laser_frame: "laser0_frame"
+  

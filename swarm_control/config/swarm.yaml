@@ -1,0 +1,99 @@
+swarm:
+  uav1:
+    pose: 
+      x:
+        value: 1.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+        limit_i: 0.1
+        limit_output: 0.5
+      y:
+        value: 1.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+        limit_output: 0.5
+      z:
+        value: 0.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+        limit_output: 0.5
+      yaw:
+        value: 0.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+        limit_output: 0.5
+    laser_topic: "scan"
+  uav2:
+    pose: 
+      x:
+        value: 1.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+      y:
+        value: -1.0
+        k_p: 0.1
+        k_i: 0.0
+        k_d: 0.1
+      z: 
+        value: 0.0
+        k_p: 0.1
+        k_i: 0.0
+        k_d: 0.1
+      yaw: 
+        value: 0.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+    laser_topic: "scan"
+  uav3:
+    pose: 
+      x:
+        value: -1.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+      y:  
+        value: 1.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+      z: 
+        value: 0.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+      yaw:
+        value: 0.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+    laser_topic: "scan"
+  uav4:
+    pose: 
+      x:
+        value: -1.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+      y:
+        value: -1.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+      z:
+        value: 0.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+      yaw:
+        value: 0.0
+        k_p: 0.1
+        k_i: 0.1
+        k_d: 0.1
+    laser_topic: "scan"
+  

@@ -1,0 +1,25 @@
+digraph G {
+"uav1/base_link" -> "uav1/front_cam_link"[label="Broadcaster: /uav1/robot_state_publisher\nAverage rate: 50.249 Hz\nMost recent transform: 217.460 \nBuffer length: 4.020 sec\n"];
+"uav1/base_stabilized" -> "uav1/base_link"[label="Broadcaster: /uav1/ground_truth_to_tf\nAverage rate: 100.251 Hz\nMost recent transform: 216.931 \nBuffer length: 3.990 sec\n"];
+"uav1/front_cam_link" -> "uav1/front_cam_optical_frame"[label="Broadcaster: /uav1/robot_state_publisher\nAverage rate: 50.249 Hz\nMost recent transform: 217.460 \nBuffer length: 4.020 sec\n"];
+"uav1/base_link" -> "uav1/laser0_frame"[label="Broadcaster: /uav1/robot_state_publisher\nAverage rate: 50.249 Hz\nMost recent transform: 217.460 \nBuffer length: 4.020 sec\n"];
+"uav1/base_link" -> "uav1/sonar_link"[label="Broadcaster: /uav1/robot_state_publisher\nAverage rate: 50.249 Hz\nMost recent transform: 217.460 \nBuffer length: 4.020 sec\n"];
+"uav2/base_link" -> "uav2/front_cam_link"[label="Broadcaster: /uav2/robot_state_publisher\nAverage rate: 50.250 Hz\nMost recent transform: 217.460 \nBuffer length: 4.000 sec\n"];
+"uav2/base_stabilized" -> "uav2/base_link"[label="Broadcaster: /uav2/ground_truth_to_tf\nAverage rate: 100.251 Hz\nMost recent transform: 216.944 \nBuffer length: 3.990 sec\n"];
+"uav2/front_cam_link" -> "uav2/front_cam_optical_frame"[label="Broadcaster: /uav2/robot_state_publisher\nAverage rate: 50.250 Hz\nMost recent transform: 217.460 \nBuffer length: 4.000 sec\n"];
+"uav2/base_link" -> "uav2/laser0_frame"[label="Broadcaster: /uav2/robot_state_publisher\nAverage rate: 50.250 Hz\nMost recent transform: 217.460 \nBuffer length: 4.000 sec\n"];
+"uav2/base_link" -> "uav2/sonar_link"[label="Broadcaster: /uav2/robot_state_publisher\nAverage rate: 50.250 Hz\nMost recent transform: 217.460 \nBuffer length: 4.000 sec\n"];
+"world" -> "uav3/base_footprint"[label="Broadcaster: /uav3/ground_truth_to_tf\nAverage rate: 100.249 Hz\nMost recent transform: 216.938 \nBuffer length: 4.010 sec\n"];
+"uav3/base_footprint" -> "uav3/base_stabilized"[label="Broadcaster: /uav3/ground_truth_to_tf\nAverage rate: 100.249 Hz\nMost recent transform: 216.938 \nBuffer length: 4.010 sec\n"];
+"uav3/base_stabilized" -> "uav3/base_link"[label="Broadcaster: /uav3/ground_truth_to_tf\nAverage rate: 100.249 Hz\nMost recent transform: 216.938 \nBuffer length: 4.010 sec\n"];
+"world" -> "uav1/base_footprint"[label="Broadcaster: /uav1/ground_truth_to_tf\nAverage rate: 100.251 Hz\nMost recent transform: 216.931 \nBuffer length: 3.990 sec\n"];
+"uav1/base_footprint" -> "uav1/base_stabilized"[label="Broadcaster: /uav1/ground_truth_to_tf\nAverage rate: 100.251 Hz\nMost recent transform: 216.931 \nBuffer length: 3.990 sec\n"];
+"world" -> "swarm_goal"[label="Broadcaster: /uav_commander\nAverage rate: 50.250 Hz\nMost recent transform: 216.967 \nBuffer length: 4.000 sec\n"];
+"world" -> "swarm_centroid"[label="Broadcaster: /uav_commander\nAverage rate: 50.250 Hz\nMost recent transform: 216.967 \nBuffer length: 4.000 sec\n"];
+"world" -> "uav2/base_footprint"[label="Broadcaster: /uav2/ground_truth_to_tf\nAverage rate: 100.251 Hz\nMost recent transform: 216.944 \nBuffer length: 3.990 sec\n"];
+"uav2/base_footprint" -> "uav2/base_stabilized"[label="Broadcaster: /uav2/ground_truth_to_tf\nAverage rate: 100.251 Hz\nMost recent transform: 216.944 \nBuffer length: 3.990 sec\n"];
+"uav3/base_link" -> "uav3/front_cam_link"[label="Broadcaster: /uav3/robot_state_publisher\nAverage rate: 50.251 Hz\nMost recent transform: 217.460 \nBuffer length: 3.980 sec\n"];
+"uav3/front_cam_link" -> "uav3/front_cam_optical_frame"[label="Broadcaster: /uav3/robot_state_publisher\nAverage rate: 50.251 Hz\nMost recent transform: 217.460 \nBuffer length: 3.980 sec\n"];
+"uav3/base_link" -> "uav3/laser0_frame"[label="Broadcaster: /uav3/robot_state_publisher\nAverage rate: 50.251 Hz\nMost recent transform: 217.460 \nBuffer length: 3.980 sec\n"];
+"uav3/base_link" -> "uav3/sonar_link"[label="Broadcaster: /uav3/robot_state_publisher\nAverage rate: 50.251 Hz\nMost recent transform: 217.460 \nBuffer length: 3.980 sec\n"];
+}
